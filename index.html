@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
     <link rel="icon" href="images/icone.ico" />
     <title>Locations de vacances</title>
   </head>
@@ -15,40 +15,56 @@
     <header>
 
       <div class="bandeau">
-        <a href="www.coin.com"><img src="images/icone.ico" alt="canard"/></a>
-        <a href="url">Devenez hôte</a>
-        <a href="url">Aide</a>
-        <a href="url">Inscription</a>
-        <a href="url">Connexion</a>
+        <a class="mainlogo" href="www.coin.com"><img src="images/icone.ico" alt="logo airbnb"/></a>
+        <a class="lienbandeau" href="url">Devenez hôte</a>
+        <a class="lienbandeau" href="url">Aide</a>
+        <a class="lienbandeau" href="url">Inscription</a>
+        <a class="lienbandeau" href="url">Connexion</a>
       </div>
 
-      <h1><span class="bold">airbnb</span> Réservez des logements uniques et vivez là-bas comme des locaux.</h1>
+      <h1><span class="bold">Airbnb</span> Réservez des logements uniques et vivez là-bas comme des locaux.</h1>
+
+      <!--~~~~~~~~~~~~~~~RECHERCHE FOR MOBILE~~~~~~~~~~~~~~-->
 
       <div class="recherchemobile">
         <a href="www.coin.com"><img src="images/recherche.png" alt="logo recherche"/>Partout . Date indifférente . 1 voyageur</a>
       </div>
+      <!--~~~~~~~~~~~~~~~RECHERCHE FOR MOBILE~~~~~~~~~~~~~~-->
+
+
+
+
+
+      <!--~~~~~~~~~~~~~~~RECHERCHE FOR TABLET~~~~~~~~~~~~~~-->
 
       <div class="recherchetablet">
         <a href="www.coin.com"><img src="images/recherche.png" alt="logo recherche"/></a>
         <a href="www.coin.com"><img src="images/date.png" alt="logo date"/></a>
         <a href="www.coin.com"><img src="images/voyageur.png" alt="logo voyageur"/></a>
       </div>
+      <!--~~~~~~~~~~~~~~~RECHERCHE FOR TABLET~~~~~~~~~~~~~~-->
+
+
+
+
+      <!--~~~~~~~~~~~~~~~RECHERCHE FOR DESKTOP~~~~~~~~~~~~~~-->
 
       <table>
        <tr>
         <td>Où</td>
         <td>Quand</td>
         <td>Voyageurs</td>
-        <td>Espagne</td>
+        <td><input type="button" value="Rechercher" /></td>
        </tr>
 
        <tr>
-        <td>Michelle</td>
+        <td><input type="text" name="keyword" value="Recherche"/></td>
         <td><a href="url">Date indifférente</a></td>
         <td><a href="url">1 voyageur</a></td>
-        <td><input type="button" value="Rechercher" /></td>
        </tr>
       </table>
+      <!--~~~~~~~~~~~~~~~RECHERCHE FOR DESKTOP~~~~~~~~~~~~~~-->
+
 
       <nav>
         <a href="url"><span class="bold">RECOMMANDÉ</span></a>
@@ -67,34 +83,34 @@
     <section>
 
     <!--~~~~~~~~~~~~~~~START OF FIRST LINE OF IMAGES~~~~~~~~~~~~~~-->
-      <article>
+      <article class="firstline">
         <h3>Nouveautés à Harlem</h3>
-
+        <div>
         <figure>
          <img src="images/image1_1.jpg" alt="" />
-         <figcaption><span class="bold">78€</span>2 heures · Harlem NYC Art & history theater</figcaption>
+         <figcaption><span class="bold">78€</span> 2 heures · Harlem NYC Art & history theater</figcaption>
         </figure>
 
         <figure>
          <img src="images/image1_2.jpg" alt="" />
-         <figcaption><span class="bold">122€</span>2 heures · Fashion & Hip Hop</figcaption>
+         <figcaption><span class="bold">122€</span> 2 heures · Fashion & Hip Hop</figcaption>
         </figure>
 
-        <figure>
+        <figure class="imagetablet">
          <img src="images/image1_3.jpg" alt="" />
-         <figcaption><span class="bold">46€</span>2 heures · Harlem & Culture</figcaption>
+         <figcaption><span class="bold">46€</span> 2 heures · Harlem & Culture</figcaption>
         </figure>
 
-        <figure>
+        <figure class="imagetablet">
          <img src="images/image1_4.jpg" alt="" />
-         <figcaption><span class="bold">87€</span>2 heures · Workshop & Fashion</figcaption>
+         <figcaption><span class="bold">87€</span> 2 heures · Workshop & Fashion</figcaption>
         </figure>
 
-        <figure>
+        <figure class="imagedesktop">
          <img src="images/image1_5.jpg" alt="" />
-         <figcaption><span class="bold">47€</span>€2 heures · Graffiti & Harlem</figcaption>
+         <figcaption><span class="bold">47€</span> 2 heures · Graffiti & Harlem</figcaption>
         </figure>
-
+       </div>
       </article>
       <!--~~~~~~~~~~~~~~~END OF FIRST LINE OF IMAGES~~~~~~~~~~~~~~-->
 
@@ -102,58 +118,58 @@
 
 
       <!--~~~~~~~~~~~~~~~START OF SECOND LINE OF IMAGES~~~~~~~~~~~~~~-->
-      <article>
+      <article class="secondline">
         <h3>Réservées à l'instant</h3>
-
+        <div>
         <figure>
          <img src="images/image2_1.jpg" alt="" />
-         <figcaption><span class="bold">49€</span>3 heures · Craft cocktails & Wine</figcaption>
+         <figcaption><span class="bold">49€</span> 3 heures · Craft cocktails & Wine</figcaption>
         </figure>
 
         <figure>
          <img src="images/image2_2.jpg" alt="" />
-         <figcaption><span class="bold">57€</span>3 heures · Photography & Camera</figcaption>
+         <figcaption><span class="bold">57€</span> 3 heures · Photography & Camera</figcaption>
         </figure>
 
-        <figure>
+        <figure class="imagetablet">
          <img src="images/image2_3.jpg" alt="" />
-         <figcaption><span class="bold">72€</span>2 heures · Museum & Comedy</figcaption>
+         <figcaption><span class="bold">72€</span> 2 heures · Museum & Comedy</figcaption>
         </figure>
 
-        <figure>
+        <figure class="imagetablet">
          <img src="images/image2_4.jpg" alt="" />
-         <figcaption><span class="bold">80€</span>3 heures · Art & Drawing</figcaption>
+         <figcaption><span class="bold">80€</span> 3 heures · Art & Drawing</figcaption>
         </figure>
 
-        <figure>
+        <figure class="imagedesktop">
          <img src="images/image2_5.jpg" alt="" />
-         <figcaption><span class="bold">72€</span>2 heures · Foodie & Culinary</figcaption>
+         <figcaption><span class="bold">72€</span> 2 heures · Foodie & Culinary</figcaption>
         </figure>
-
+       </div>
       </article>
       <!--~~~~~~~~~~~~~~~END OF SECOND LINE OF IMAGES~~~~~~~~~~~~~~-->
 
 
 
       <!--~~~~~~~~~~~~~~~START OF THIRD LINE OF IMAGES LOGEMENTS~~~~~~~~~~~~~~-->
-      <article>
+      <article class="thirdline">
         <h3>Logements</h3>
-
+        <div>
         <figure>
          <img src="images/image3_1.jpg" alt="" />
-         <figcaption><span class="bold">60€</span>The best position in Hvar!Logement entier · 2 lits</figcaption>
+         <figcaption><span class="bold">60€</span> The best position in Hvar!Logement entier · 2 lits</figcaption>
         </figure>
 
-        <figure>
+        <figure class="imagetablet">
          <img src="images/image3_2.jpg" alt="" />
-         <figcaption><span class="bold">167€</span>Adorable cabin close to the lake Logement entier · 3 lits</figcaption>
+         <figcaption><span class="bold">167€</span> Adorable cabin close to the lake Logement entier · 3 lits</figcaption>
         </figure>
 
-        <figure>
+        <figure class="imagetablet">
          <img src="images/image3_3.jpg" alt="" />
-         <figcaption><span class="bold">47€</span>White Breeze Pool 1BD Apartment Logement entier · 1 lit</figcaption>
+         <figcaption><span class="bold">47€</span> White Breeze Pool 1BD Apartment Logement entier · 1 lit</figcaption>
         </figure>
-
+       </div>
       </article>
       <!--~~~~~~~~~~~~~~~END OF THIRD LINE OF IMAGES LOGEMENTS~~~~~~~~~~~~~~-->
 
@@ -161,9 +177,9 @@
 
 
       <!--~~~~~~~~~~~~~~~START OF FOURTH LINE OF IMAGES DESTINATIONS CITIES~~~~~~~~~~~~~~-->
-      <article>
+      <article class="fourthline">
         <h3>Destinations à la une</h3>
-
+        <div>
         <figure>
          <img src="images/image4_1.jpg" alt="" />
          <figcaption>Tokyo</figcaption>
@@ -179,35 +195,39 @@
          <figcaption>Miami</figcaption>
         </figure>
 
-        <figure>
+        <figure class="imagetablet">
          <img src="images/image4_4.jpg" alt="" />
          <figcaption>Los Angeles</figcaption>
         </figure>
 
-        <figure>
+        <figure class="imagetablet">
          <img src="images/image4_5.jpg" alt="" />
          <figcaption>Londres</figcaption>
         </figure>
 
-        <figure>
+        <figure class="imagedesktop">
          <img src="images/image4_6.jpg" alt="" />
          <figcaption>Florence</figcaption>
         </figure>
-
+       </div>
       </article>
       <!--~~~~~~~~~~~~~~~END OF FOURTH LINE OF IMAGES DESTINATIONS CITIES~~~~~~~~~~~~~~-->
 
 
 
       <!--~~~~~~~~~~~~~~~START OF FIFTH LINE OF IMAGES (LAST)~~~~~~~~~~~~~~-->
-      <article>
+      <article class="fifthline">
 
-        <h3><span class="bold">Ouvrez la porte à un voyageur et à une nouvelle vie</span></h3>
-        <p>Gagnez de l'argent en accueillant des voyageurs.</p>
-        <a href="url">Devenez hôte</a>
         <figure>
          <img src="images/image5_1.jpg" alt="" />
         </figure>
+
+        <h2><span class="bold">Ouvrez la porte à un voyageur et à une nouvelle vie</span></h2>
+
+        <div>
+          <p>Gagnez de l'argent en accueillant des voyageurs.</p>
+          <a href="url">Estimer mes revenus</a>
+        </div>
 
       </article>
       <!--~~~~~~~~~~~~~~~END OF FIFTH LINE OF IMAGES (LAST)~~~~~~~~~~~~~~-->
@@ -225,6 +245,81 @@
       <div class="footer1">
 
        <div>
+         <select name="pays" id="pays">
+           <option value="id">Bahasa Indonesia</option>
+           <option value="ms">Bahasa Melayu</option>
+           <option value="ca">Català</option>
+           <option value="da">Dansk</option>
+           <option value="de">Deutsch</option>
+           <option value="en">English</option>
+           <option value="es">Español</option>
+           <option value="el">Eλληνικά</option>
+           <option value="fr" selected="selected">Français</option>
+           <option value="it">Italiano</option>
+           <option value="hu">Magyar</option>
+           <option value="nl">Nederlands</option>
+           <option value="no">Norsk</option>
+           <option value="pl">Polski</option>
+           <option value="pt">Português</option>
+           <option value="fi">Suomi</option>
+           <option value="sv">Svenska</option>
+           <option value="tr">Türkçe</option><
+           option value="is">Íslenska</option>
+           <option value="cs">Čeština</option>
+           <option value="ru">Русский</option>
+           <option value="th">ภาษาไทย</option>
+           <option value="zh">中文 (简体)</option>
+           <option value="zh-TW">中文 (繁體)</option>
+           <option value="ja">日本語</option>
+           <option value="ko">한국어</option>
+        </select>
+
+        <select name="pays" id="devise">
+          <option value="AED">AED</option>
+          <option value="ARS">ARS</option>
+          <option value="AUD">AUD</option>
+          <option value="BGN">BGN</option>
+          <option value="BRL">BRL</option>
+          <option value="CAD">CAD</option>
+          <option value="CHF">CHF</option>
+          <option value="CLP">CLP</option>
+          <option value="CNY">CNY</option>
+          <option value="COP">COP</option>
+          <option value="CRC">CRC</option>
+          <option value="CZK">CZK</option>
+          <option value="DKK">DKK</option>
+          <option value="EUR" selected="selected">EUR</option>
+          <option value="GBP">GBP</option>
+          <option value="HKD">HKD</option>
+          <option value="HRK">HRK</option>
+          <option value="HUF">HUF</option>
+          <option value="IDR">IDR</option>
+          <option value="ILS">ILS</option>
+          <option value="INR">INR</option>
+          <option value="JPY">JPY</option>
+          <option value="KRW">KRW</option>
+          <option value="MAD">MAD</option>
+          <option value="MXN">MXN</option>
+          <option value="MYR">MYR</option>
+          <option value="NOK">NOK</option>
+          <option value="NZD">NZD</option>
+          <option value="PEN">PEN</option>
+          <option value="PHP">PHP</option>
+          <option value="PLN">PLN</option>
+          <option value="RON">RON</option>
+          <option value="RUB">RUB</option>
+          <option value="SAR">SAR</option>
+          <option value="SEK">SEK</option>
+          <option value="SGD">SGD</option>
+          <option value="THB">THB</option>
+          <option value="TRY">TRY</option>
+          <option value="TWD">TWD</option>
+          <option value="UAH">UAH</option>
+          <option value="USD">USD</option>
+          <option value="UYU">UYU</option>
+          <option value="VND">VND</option>
+          <option value="ZAR">ZAR</option>
+       </select>
        </div>
 
        <article>
@@ -265,9 +360,9 @@
       <p>© Airbnb, Inc.</p>
       <a href="url">Conditions générales et confidentialité</a>
       <a href="url">Plan du site</a>
-      <a href="www.coin.com"><img src="canard.jpg" alt="canard"/></a>
-      <a href="www.coin.com"><img src="canard.jpg" alt="canard"/></a>
-      <a href="www.coin.com"><img src="canard.jpg" alt="canard"/></a>
+      <a href=""><img src="images/social1.png" alt="canard"/></a>
+      <a href=""><img src="images/social2.png" alt="canard"/></a>
+      <a href=""><img src="images/social3.png" alt="canard"/></a>
     </div>
 
     </footer>

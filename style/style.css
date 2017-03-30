@@ -1,1 +1,277 @@
-font-family: 'Quicksand', sans-serif;
+/* ~~~~~~~~~~~~~~~~~~~~~ COMMON RULES ~~~~~~~~~~~~~~~~~~~~~~*/
+
+body
+{
+ font-family: 'Open Sans', sans-serif;
+ margin:0;
+}
+
+span
+{
+  font-weight: bold;
+}
+
+/* ELEMENTS EN TROP VERSION MOBILE */
+
+header .recherchetablet, header table, footer .footer1 article, section article div .imagetablet, section article div .imagedesktop, footer .footer1 article, header .bandeau .lienbandeau
+{
+  display: none;
+}
+
+
+
+
+/*~~~~~~~~~~~~~~~ HEADER ~~~~~~~~~~~~~~~*/
+
+header .bandeau
+{
+  background-color: green;
+  width: 100%;
+  height: 64px;
+  display: inline-flex;
+
+}
+
+header .bandeau .mainlogo
+{
+  background-color: pink;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+header .bandeau .mainlogo a
+{
+  display: inline-block;
+  margin-left: 30px;
+}
+
+header .bandeau .mainlogo a img
+{
+  margin: auto;
+  vertical-align: middle;
+}
+
+header h1
+{
+  background-color: yellow;
+  width: 80%;
+  margin: auto;
+  margin-top: 25px;
+  font-size: 1.4em;
+  color:rgba(72, 72, 72, 1);
+}
+
+header h1 span
+{
+  color: rgba(255, 90, 95, 1);
+  font-weight: bold;
+}
+
+
+
+header .recherchemobile
+{
+  display: block;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  height: 42px;
+  width: 85%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+header .recherchemobile a
+{
+  background-color: yellow;
+  vertical-align: middle;
+  height: 42px;
+  width: 85%;
+  overflow: hidden;
+}
+
+header nav
+{
+  background-color: grey;
+  margin-top: 20px;
+  height: 40px;
+  overflow-y: hidden;
+}
+
+header nav a
+{
+  display: inline-block;
+  font-size: 11px;
+  font-weight: bold;
+  height: 40px;
+  margin: 10px;
+}
+
+
+
+
+/*~~~~~~~~~~~~~~~ SECTION ARTICLES~~~~~~~~~~~~~~~*/
+
+
+
+
+
+
+/*~~~~~~~~~~~~~~~ SECTION ARTICLES COMMON RULES ALL LINES ~~~~~~~~~~~~~~~*/
+section .firstline, section .secondline, section .thirdline, section .fourthline, section .fifthline
+{
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 30px;
+}
+
+section .firstline h3, section .secondline h3, section .thirdline h3, section .fourthline h3, section .fifthline h3
+{
+  background-color: yellow;
+  display: block;
+  margin-left: 20px;
+}
+
+section .firstline div, section .secondline div, section .thirdline div, section .fourthline div, section .fifthline div
+{
+  width: 95%;
+  margin-left: 15px;
+  background-color: green;
+  display:inline-flex;
+  justify-content: flex-start;
+}
+
+
+section .firstline figcaption, section .secondline figcaption, section .thirdline figcaption, section .fourthline figcaption, section .fifthline figcaption
+{
+  height: 15%;
+  overflow: hidden;
+  font-size: 0.9em;
+}
+
+
+section .firstline figure img, section .secondline figure img, section .thirdline figure img, section .fourthline figure img, section .fifthline figure img
+{
+  height:auto;
+  width: 100%;
+}
+
+/*~~~~~~~~~~~~~~~ END SECTION ARTICLES COMMON RULES ALL LINES ~~~~~~~~~~~~~~~*/
+
+
+
+
+/*~~~~~~~~~~~~~~~ SECTION ARTICLES FIRST & SECOND LINE~~~~~~~~~~~~~~~*/
+section .firstline figure, section .secondline figure
+{
+  background-color: pink;
+  height:auto;
+  min-width: 112px;
+  margin:5px;
+}
+/*~~~~~~~~~~~~~~~ END SECTION ARTICLES FIRST & SECOND LINE~~~~~~~~~~~~~~~*/
+
+
+
+
+/*~~~~~~~~~~~~~~~ SECTION ARTICLES THIRD LINE~~~~~~~~~~~~~~~*/
+section .thirdline figure
+{
+  background-color: pink;
+  height:auto;
+  min-width: 112px;
+  margin: 5px;
+}
+
+section .thirdline figcaption
+{
+  height: 19%;
+}
+/*~~~~~~~~~~~~~~~ END SECTION ARTICLES THIRD LINE~~~~~~~~~~~~~~~*/
+
+
+
+
+/*~~~~~~~~~~~~~~~ SECTION ARTICLES FOURTH LINE~~~~~~~~~~~~~~~*/
+section .fourthline figure
+{
+  background-color: pink;
+  height:auto;
+  min-width: 70px;
+  margin-left: 5px;
+}
+
+section .fourthline figcaption
+{
+  height: 12%;
+}
+/*~~~~~~~~~~~~~~~ END SECTION ARTICLES FOURTH LINE~~~~~~~~~~~~~~~*/
+
+
+
+
+/*~~~~~~~~~~~~~~~ SECTION ARTICLES FIFTH LINE~~~~~~~~~~~~~~~*/
+
+section .fifthline figure
+{
+  height:auto;
+  min-width: 43px;
+  width: 100%;
+  margin: 0;
+}
+
+section .fifthline div
+{
+  display: flex;
+  flex-direction: column;
+}
+
+section .fifthline h2
+{
+  margin-left: 15px;
+}
+
+/*~~~~~~~~~~~~~~~ END SECTION ARTICLES FIFTH LINE~~~~~~~~~~~~~~~*/
+
+
+/*~~~~~~~~~~~~~~~ END SECTION ARTICLES IMAGES~~~~~~~~~~~~~~~*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*~~~~~~~~~~~~~~~ FOOTER ~~~~~~~~~~~~~~~*/
+
+footer .footer1 div
+{
+  width:90%;
+  margin: auto;
+  background-color: yellow;
+  height: 80px;
+}
+
+footer .footer2
+
+
+
+
+
+
+
+/*~~~~~~~~~~~~~~~ END OF FOOTER~~~~~~~~~~~*/
