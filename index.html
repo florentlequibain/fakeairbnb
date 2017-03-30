@@ -38,9 +38,9 @@
       <!--~~~~~~~~~~~~~~~RECHERCHE FOR TABLET~~~~~~~~~~~~~~-->
 
       <div class="recherchetablet">
-        <a href="www.coin.com"><img src="images/recherche.png" alt="logo recherche"/></a>
-        <a href="www.coin.com"><img src="images/date.png" alt="logo date"/></a>
-        <a href="www.coin.com"><img src="images/voyageur.png" alt="logo voyageur"/></a>
+        <a href="www.coin.com"><img src="images/recherche.png" alt="logo recherche"/> Partout</a>
+        <a href="www.coin.com" class="lienmilieu"><img src="images/date.png" alt="logo date"/> Date indifférente</a>
+        <a href="www.coin.com"><img src="images/voyageur.png" alt="logo voyageur"/> 1 voyageur</a>
       </div>
       <!--~~~~~~~~~~~~~~~RECHERCHE FOR TABLET~~~~~~~~~~~~~~-->
 
@@ -50,17 +50,17 @@
       <!--~~~~~~~~~~~~~~~RECHERCHE FOR DESKTOP~~~~~~~~~~~~~~-->
 
       <table>
-       <tr>
+       <tr class="ligne1">
         <td>Où</td>
         <td>Quand</td>
-        <td>Voyageurs</td>
-        <td><input type="button" value="Rechercher" /></td>
+        <td colspan="4">Voyageurs</td>
+        <td rowspan="4" class="case4"><input type="button" value="Rechercher" /></td>
        </tr>
 
-       <tr>
+       <tr class="ligne2">
         <td><input type="text" name="keyword" value="Recherche"/></td>
         <td><a href="url">Date indifférente</a></td>
-        <td><a href="url">1 voyageur</a></td>
+        <td colspan="4"><a href="url">1 voyageur</a></td>
        </tr>
       </table>
       <!--~~~~~~~~~~~~~~~RECHERCHE FOR DESKTOP~~~~~~~~~~~~~~-->
@@ -356,7 +356,9 @@
     </div>
 
     <div class="footer2">
-      <img src="image.jpg" alt="" />
+      <figure>
+       <img src="images/airbnbgrey.png" alt="" />
+      </figure>
       <p>© Airbnb, Inc.</p>
       <a href="url">Conditions générales et confidentialité</a>
       <a href="url">Plan du site</a>
