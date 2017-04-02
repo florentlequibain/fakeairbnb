@@ -6,7 +6,7 @@ body
  margin:0;
 }
 
-span
+.bold
 {
   font-weight: bold;
 }
@@ -30,7 +30,6 @@ header .recherchetablet, header table, footer .footer1 article, section article 
 
 header .bandeau
 {
-  background-color: green;
   width: 100%;
   height: 64px;
   display: inline-flex;
@@ -39,7 +38,6 @@ header .bandeau
 
 header .bandeau .mainlogo
 {
-  background-color: pink;
   margin-left: 20px;
   margin-top: 20px;
 }
@@ -58,7 +56,6 @@ header .bandeau .mainlogo a img
 
 header h1
 {
-  background-color: yellow;
   width: 80%;
   margin: auto;
   margin-top: 25px;
@@ -76,7 +73,7 @@ header h1 span
 
 header .recherchemobile
 {
-  display: block;
+  display: flex;
   border-style: solid;
   border-width: 1px;
   border-color: rgba(0, 0, 0, 0.3);
@@ -85,22 +82,25 @@ header .recherchemobile
   width: 85%;
   margin: auto;
   margin-top: 50px;
+  overflow: hidden;
 }
 
 header .recherchemobile a
 {
-  background-color: yellow;
-  vertical-align: middle;
-  height: 42px;
-  width: 85%;
-  overflow: hidden;
+  text-overflow: hidden;
+  white-space: nowrap;
+  align-items: center;
+  margin: auto;
+  margin-left: 5px;
 }
 
+
+/*~~~~~~~~~~~~~~~ NAV ~~~~~~~~~~~~~~~*/
 header nav
 {
-  background-color: grey;
+  margin-left: 12px;
   margin-top: 20px;
-  height: 40px;
+  height: 41px;
   overflow-y: hidden;
 }
 
@@ -109,9 +109,23 @@ header nav a
   display: inline-block;
   font-size: 11px;
   font-weight: bold;
-  height: 40px;
+  height: 30px;
   margin: 10px;
 }
+
+.pagelien
+{
+  border-bottom: 1px solid black;
+}
+
+.ligne
+{
+  width: 85%;
+  margin-left: 22px;
+  margin-top: 0;
+}
+/*~~~~~~~~~~~~~~~ END OF NAV ~~~~~~~~~~~~~~~*/
+
 
 
 
@@ -536,29 +550,30 @@ header table
 {
   display: block;
   border-collapse: collapse;
-  margin-left: 100px;
+  width: 80%;
+  margin:auto;
   margin-top: 60px;
-  border-radius: 4px;
+  border: 1px solid black;
+  border-radius: 2px;
 }
 
-header table .ligne1 td
+header table tr td
 {
-  border:1px solid black;
-  border-bottom: none;
-  border-radius: 4px;
-  width: 200px;
+  width: 400px;
+  height: 30px;
 }
 
-header table .ligne2 td
+.l1c1 , .l2c1
 {
-  border:1px solid black;
-  border-top: none;
+  border-right: 1px solid black;
 }
 
-header table .ligne1 .case4
+.l1c2 , .l2c2
 {
-  border:1px solid black;
+  border-right: 1px solid black;
 }
+
+
 
 
 
