@@ -2,18 +2,21 @@
 
 body
 {
- font-family: 'Open Sans', sans-serif;
+ font-family:Circular,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
  margin:0;
 }
+
+
 
 .bold
 {
   font-weight: bold;
 }
 
-a
+a, h3, figcaption, h2, p
 {
   text-decoration: none;
+  color: rgba(72, 72, 72, 1)
 }
 
 /* ELEMENTS EN TROP VERSION MOBILE */
@@ -30,13 +33,15 @@ header .recherchetablet, header table, footer .footer1 article, section article 
 
 header .bandeau
 {
-  width: 100%;
+  width: 70%;
   height: 64px;
   display: inline-flex;
+  flex-direction: row-reverse;
+  float: right;
 
 }
 
-header .bandeau .mainlogo
+header .mainlogo
 {
   margin-left: 20px;
   margin-top: 20px;
@@ -76,7 +81,7 @@ header .recherchemobile
   display: flex;
   border-style: solid;
   border-width: 1px;
-  border-color: rgba(0, 0, 0, 0.3);
+  border-color: rgba(0, 0, 0, 0.1);
   border-radius: 4px;
   height: 42px;
   width: 85%;
@@ -92,6 +97,7 @@ header .recherchemobile a
   align-items: center;
   margin: auto;
   margin-left: 5px;
+  color:rgba(72, 72, 72, 1);
 }
 
 
@@ -100,7 +106,7 @@ header nav
 {
   margin-left: 12px;
   margin-top: 20px;
-  height: 41px;
+  height: 42px;
   overflow-y: hidden;
 }
 
@@ -111,11 +117,13 @@ header nav a
   font-weight: bold;
   height: 30px;
   margin: 10px;
+  color:rgba(72, 72, 72, 0.8);
 }
 
 .pagelien
 {
-  border-bottom: 1px solid black;
+  border-bottom: 3px solid rgba(0, 132, 137, 1);
+  color: rgba(0, 132, 137, 1);
 }
 
 .ligne
@@ -140,7 +148,6 @@ header nav a
 /*~~~~~~~~~~~~~~~ SECTION ARTICLES COMMON RULES ALL LINES ~~~~~~~~~~~~~~~*/
 section .firstline, section .secondline, section .thirdline, section .fourthline, section .fifthline
 {
-  background-color: blue;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -149,7 +156,6 @@ section .firstline, section .secondline, section .thirdline, section .fourthline
 
 section .firstline h3, section .secondline h3, section .thirdline h3, section .fourthline h3, section .fifthline h3
 {
-  background-color: yellow;
   display: block;
   margin-left: 20px;
 }
@@ -158,7 +164,6 @@ section .firstline div, section .secondline div, section .thirdline div, section
 {
   width: 95%;
   margin-left: 15px;
-  background-color: green;
   display:inline-flex;
   justify-content: flex-start;
 }
@@ -186,7 +191,6 @@ section .firstline figure img, section .secondline figure img, section .thirdlin
 /*~~~~~~~~~~~~~~~ SECTION ARTICLES FIRST & SECOND LINE~~~~~~~~~~~~~~~*/
 section .firstline figure, section .secondline figure
 {
-  background-color: pink;
   height:auto;
   min-width: 112px;
   margin:5px;
@@ -199,7 +203,6 @@ section .firstline figure, section .secondline figure
 /*~~~~~~~~~~~~~~~ SECTION ARTICLES THIRD LINE~~~~~~~~~~~~~~~*/
 section .thirdline figure
 {
-  background-color: pink;
   height:auto;
   min-width: 112px;
   margin: 5px;
@@ -217,7 +220,6 @@ section .thirdline figcaption
 /*~~~~~~~~~~~~~~~ SECTION ARTICLES FOURTH LINE~~~~~~~~~~~~~~~*/
 section .fourthline figure
 {
-  background-color: pink;
   height:auto;
   min-width: 70px;
   margin-left: 5px;
@@ -246,11 +248,30 @@ section .fifthline div
 {
   display: flex;
   flex-direction: column;
+  width: 65%;
+}
+
+section .fifthline .lienrevenus
+{
+  width: 180px;
+  height: 35px;
+  background-color: rgba(0, 132, 137, 1);
+  margin-left: 0;
+  border-radius: 4px;
+}
+
+section .fifthline .lienrevenus a
+{
+  color: white;
+  margin: auto;
+  font-weight: bold;
 }
 
 section .fifthline h2
 {
   margin-left: 15px;
+  font-size: 1.5em;
+  width: 65%;
 }
 
 /*~~~~~~~~~~~~~~~ END SECTION ARTICLES FIFTH LINE~~~~~~~~~~~~~~~*/
@@ -277,28 +298,72 @@ section .fifthline h2
 
 /*~~~~~~~~~~~~~~~ FOOTER ~~~~~~~~~~~~~~~*/
 
-footer .footer1 div
+footer
 {
-  width:90%;
-  margin: auto;
-  background-color: yellow;
-  height: 80px;
+  margin-top: 50px;
+  border-top: 1px solid;
+  border-top-color: rgba(0, 0, 0, 0.2);
 }
+
+footer .footer1
+{
+  margin-top: 30px;
+  margin-left: 15px;
+  display:inline-flex;
+  justify-content: space-between;
+  width: 90%;
+}
+
+footer .footer1 .select
+{
+  background: transparent;
+  width: 47%;
+  font-size: 30px;
+  line-height: 1;
+  border: 0;
+  border-radius: 1px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  height: 50px;
+  overflow: hidden;
+}
+/*width:80%;
+margin: auto;
+background-color: yellow;
+height: 50px;
+display: flex;
+justify-content: space-between;*/
 
 footer .footer1 div select
 {
+  width: 200px;
+  height: 65px;
+  background-color: white;
+}
+
+
+  /*
    -webkit-appearance: none;
    -moz-appearance: none;
    appearance: none;
    background-image: url(images/selecteur.png);
-   width: 49%;
+   width: 48%;
    height: 45px;
-
-}
+*/
 
 footer .footer2
 {
-  background-color: pink;
+  width: 90%;
+  margin-left: 15px;
+  margin-top: 30px;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-top: 1px solid rgba(0, 0, 0, 0.2) ;
+}
+
+footer .footer2 a
+{
+  margin:3px;
 }
 
 
@@ -339,7 +404,6 @@ header h1
 header .recherchetablet
 {
   display: flex;
-  background-color: pink;
   justify-content: center;
   margin-top: 60px;
 }
@@ -425,10 +489,7 @@ section .fifthline figure
   margin: 0;
 }
 
-section .fifthline h2
-{
-  background-color: yellow;
-}
+
 
 
 /*~~~~~~~~~~~~~~~ END SECTION ARTICLES FIFTH LINE~~~~~~~~~~~~~~~*/
@@ -448,14 +509,14 @@ section .fifthline h2
 /*~~~~~~~~~~~~~~~ FOOTER ~~~~~~~~~~~~~~~*/
 footer .footer1 article
 {
-  display: block;
-  background-color: skyblue;
+  display: inline-block;
   width: 150px;
 }
 
 footer .footer1 article h5
 {
-  background-color: red;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.7);
 }
 
 
@@ -463,20 +524,22 @@ footer .footer1 article li
 {
   list-style: none;
   margin: 0;
+  color: rgba(0, 0, 0, 0.5);
 }
 
-
-footer .footer1 div
-{
-  display: flex;
-  flex-direction: column;
-  width: 20%;
-}
 
 footer .footer1
 {
-  display: inline-flex;
+  display: flex;
+  flex-direction: row;
+  width: 90%;
 }
+
+footer .footer1 .select
+{
+
+}
+
 
 footer .footer2
 {
@@ -538,6 +601,8 @@ header .recherchetablet
 header .bandeau .lienbandeau
 {
   display: inline;
+  margin: 8px;
+
 }
 
 header h1
@@ -553,7 +618,7 @@ header table
   width: 80%;
   margin:auto;
   margin-top: 60px;
-  border: 1px solid black;
+  border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 2px;
 }
 
@@ -565,12 +630,36 @@ header table tr td
 
 .l1c1 , .l2c1
 {
-  border-right: 1px solid black;
+  border-right: 1px solid rgba(0, 0, 0, 0.3);
+  color: rgba(72, 72, 72,1);
 }
 
 .l1c2 , .l2c2
 {
-  border-right: 1px solid black;
+  border-right: 1px solid rgba(0, 0, 0, 0.3);
+  color: rgba(72, 72, 72,1);
+}
+
+.l1c3
+{
+  color: rgba(72, 72, 72,1);
+}
+
+.l1c4 input
+{
+  background-color: rgba(255, 90, 95, 1);
+  color:white;
+  border: none;
+  border-radius: 3px;
+  height: 40px;
+  width: 120px;
+  margin-left: 50%;
+}
+
+.l2c1 input
+{
+  border: none;
+  color: rgba(72, 72, 72,1);
 }
 
 
